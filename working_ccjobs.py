@@ -20,7 +20,7 @@ print(response) # check if response successful  (100, 200, 400 codes)
 
 soup = BeautifulSoup(response.text, 'html.parser')  # extracts text
 
-cards = soup.find_all('li', class_='ais-')  #TODO: Troubleshoot this. Try different job posting website
+cards = soup.find_all('li', class_='ais-Hits-item')  #TODO: Troubleshoot this. Try different job posting website
 
-print(len(cards))
+print((cards))
 
